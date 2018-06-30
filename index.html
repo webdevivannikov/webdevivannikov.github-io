@@ -19,6 +19,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -26,13 +27,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<img class="header-img" src="img\main.png" alt="">
+					<img class="header-img wow fadeInLeftBig" src="img\main.png" alt="">
 				</div>
 				<div class="col-lg-5">
-					<p class="header-pretitle">Веб-разработчик<p>
-					<h1 class="header-title">Иванников Александр</h1>
-					<p class="header-subtitle">Верстка на HTML/CSS <br>Разработка сайтов под ключ<p>
-					<div class="header-button-block">
+					<p class="header-pretitle wow fadeInRightBig">Веб-разработчик<p>
+					<h1 class="header-title wow fadeInRightBig">Иванников Александр</h1>
+					<p class="header-subtitle wow fadeInRightBig">Верстка на HTML/CSS <br>Разработка сайтов под ключ<p>
+					<div class="header-button-block wow fadeInRightBig">
 						<a href="https://vk.com/cahb4es" class="header-button">Связаться</a>
 						<small>*Это бесплатно</small>	
 					</div>
@@ -41,7 +42,7 @@
 		</div>
 	</header>
 	<section class="portfolio">
-		<div class="portfolio-block">
+		<div class="portfolio-block wow fadeIn">
 			<h2 class="portfolio-title">Портфолио</h2>
 			<p class="portfolio-subtitle">Мои работы</p>
 			<div class="row">
@@ -76,10 +77,10 @@
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь</p>
-						<a href="https://fb.com/cahb4es"><img src="img\socials\facebook-logo-button.png" alt="Facebook"></a>
-						<a href="https://t.me/cahb4es"><img src="img\socials\telegram-symbol.png" alt="Telegram"></a>
-						<a href="https://vk.com/cahb4es"><img src="img\socials\vk-social-logotype.png" alt="VK"></a>
-						<a href="https://youtube.com/c/cahb4es"><img src="img\socials\youtube-symbol.png" alt="Youtube"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.1s" href="https://fb.com/cahb4es"><img src="img\socials\facebook-logo-button.png" alt="Facebook"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.2s" href="https://t.me/cahb4es"><img src="img\socials\telegram-symbol.png" alt="Telegram"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://vk.com/cahb4es"><img src="img\socials\vk-social-logotype.png" alt="VK"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.4s" href="https://youtube.com/c/cahb4es"><img src="img\socials\youtube-symbol.png" alt="Youtube"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -91,5 +92,11 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/wow.min.js">
+		
+	</script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
